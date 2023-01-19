@@ -13,7 +13,7 @@ struct MovieResponse: Decodable {
 }
 
 // MARK: - Result
-struct Movie: Decodable {
+struct Movie: Decodable, Identifiable {
     let id: Int
     let backdropPath: String
     let title: String

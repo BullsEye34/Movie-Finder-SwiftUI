@@ -25,6 +25,7 @@ struct MovieBackdropView: View {
             .shadow(radius: 4, x: 0, y: 0)
             Text(movie.title)
         }
+        .lineLimit(1)
         .onAppear{
             self.imageLoader.loadImage(with: self.movie.backdropURL)
         }

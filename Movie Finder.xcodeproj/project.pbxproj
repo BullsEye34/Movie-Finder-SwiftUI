@@ -20,6 +20,7 @@
 		C433BADE2979503100B3793A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C433BADD2979503100B3793A /* ImageLoader.swift */; };
 		C433BAE129795FB000B3793A /* trending.json in Resources */ = {isa = PBXBuildFile; fileRef = C433BADF29795FB000B3793A /* trending.json */; };
 		C433BAE229795FB000B3793A /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = C433BAE029795FB000B3793A /* search.json */; };
+		C433BAE4297962DC00B3793A /* MovieBackdropCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C433BAE3297962DC00B3793A /* MovieBackdropCarouselView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		C433BADD2979503100B3793A /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		C433BADF29795FB000B3793A /* trending.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trending.json; sourceTree = "<group>"; };
 		C433BAE029795FB000B3793A /* search.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search.json; sourceTree = "<group>"; };
+		C433BAE3297962DC00B3793A /* MovieBackdropCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCarouselView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				C433BADA2979500A00B3793A /* MovieBackdropView.swift */,
+				C433BAE3297962DC00B3793A /* MovieBackdropCarouselView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				C433BAD3297948FE00B3793A /* Movie+Stub.swift in Sources */,
 				C433BADE2979503100B3793A /* ImageLoader.swift in Sources */,
 				C433BAB62979242900B3793A /* Movie_FinderApp.swift in Sources */,
+				C433BAE4297962DC00B3793A /* MovieBackdropCarouselView.swift in Sources */,
 				C433BACF2979355600B3793A /* MovieStore.swift in Sources */,
 				C433BAD12979364B00B3793A /* Utils.swift in Sources */,
 			);
