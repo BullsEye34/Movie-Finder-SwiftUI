@@ -9,11 +9,11 @@ import Foundation
 
 // MARK: - MovieResponse
 struct MovieResponse: Decodable {
-    let results: [Result]
+    let results: [Movie]
 }
 
 // MARK: - Result
-struct Result: Decodable {
+struct Movie: Decodable {
     let id: Int
     let backdropPath: String
     let title: String
