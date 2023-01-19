@@ -13,6 +13,8 @@
 		C433BABD2979242900B3793A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C433BABC2979242900B3793A /* Preview Assets.xcassets */; };
 		C433BAC929792F0000B3793A /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C433BAC829792F0000B3793A /* MovieModel.swift */; };
 		C433BACD297930F800B3793A /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C433BACC297930F800B3793A /* MovieService.swift */; };
+		C433BACF2979355600B3793A /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C433BACE2979355600B3793A /* MovieStore.swift */; };
+		C433BAD12979364B00B3793A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C433BAD02979364B00B3793A /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		C433BABC2979242900B3793A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C433BAC829792F0000B3793A /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		C433BACC297930F800B3793A /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		C433BACE2979355600B3793A /* MovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
+		C433BAD02979364B00B3793A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			children = (
 				C433BAB52979242900B3793A /* Movie_FinderApp.swift */,
 				C433BAB72979242900B3793A /* ContentView.swift */,
+				C433BAD02979364B00B3793A /* Utils.swift */,
 				C433BACB297930CC00B3793A /* Services */,
 				C433BAC729792D1800B3793A /* Models */,
 				C433BAC32979246F00B3793A /* View */,
@@ -93,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				C433BACC297930F800B3793A /* MovieService.swift */,
+				C433BACE2979355600B3793A /* MovieStore.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -171,6 +177,8 @@
 				C433BAB82979242900B3793A /* ContentView.swift in Sources */,
 				C433BACD297930F800B3793A /* MovieService.swift in Sources */,
 				C433BAB62979242900B3793A /* Movie_FinderApp.swift in Sources */,
+				C433BACF2979355600B3793A /* MovieStore.swift in Sources */,
+				C433BAD12979364B00B3793A /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
