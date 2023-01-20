@@ -67,6 +67,7 @@ struct MovieListView: View {
             }
             .navigationTitle("Movie Finder")
             .listStyle(.plain)
+            .scrollIndicators(.hidden)
             .navigationBarTitleDisplayMode(.large)
         }
         .onAppear(){
