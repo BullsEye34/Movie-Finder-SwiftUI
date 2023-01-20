@@ -20,9 +20,13 @@ struct MovieBackdropCarouselView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 16) {
                     ForEach(self.movies) { movie in
-                        MovieBackdropView(movie: movie)
-                            .frame(width: 272, height: 200)
+                        NavigationLink(destination: MovieDetailView(id: movie.id)){
+                            MovieBackdropView(movie: movie)
+                                .frame(width: 272, height: 200)
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     }
+                        
                 }
                 .padding(.horizontal, 16)
             }

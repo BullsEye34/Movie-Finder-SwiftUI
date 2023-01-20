@@ -41,6 +41,7 @@ struct MovieDetailView_Previews: PreviewProvider {
 struct MovieDetailsListView: View{
     
     let movie: Movie
+    @State private var selectedTrailer: MovieVideo?
     
     var body: some View{
         List{
@@ -120,8 +121,29 @@ struct MovieDetailsListView: View{
             Divider()
                 .listRowSeparator(.hidden)
             
+            if movie.youtubeTrailers != nil && movie.youtubeTrailers!.count > 0{
+                Text("Trailers")
+                    .font(.headline)
+                
+                ForEach(self.movie.youtubeTrailers!){ trailer in
+                    Button(action: {
+                        self.selectedTrailer = trailer
+                    }){
+                        HStack{
+                            Text(trailer.name)
+                            Spacer()
+                            Image(systemName: "play.circle.fill")
+                                .foregroundColor(Color(UIColor.systemBlue))
+                        }
+                        .padding(.zero)
+                    }
+                }
+                .listRowSeparator(.hidden)
+            }
+                
+        }.sheet(item: self.$selectedTrailer) { trailer in
+            SafariView(url: trailer.youtubeURL!)
         }
-        
     }
 }
 

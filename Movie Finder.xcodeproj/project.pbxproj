@@ -30,6 +30,7 @@
 		C43AF7A6297AB20D00A64CF4 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43AF7A5297AB20D00A64CF4 /* MovieDetailView.swift */; };
 		C43AF7A8297AB2A400A64CF4 /* MovieDetailsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43AF7A7297AB2A400A64CF4 /* MovieDetailsState.swift */; };
 		C4D92360297AE4A8000F984E /* movie_info.json in Resources */ = {isa = PBXBuildFile; fileRef = C4D9235F297AE4A8000F984E /* movie_info.json */; };
+		C4D92362297AF122000F984E /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D92361297AF122000F984E /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		C43AF7A5297AB20D00A64CF4 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		C43AF7A7297AB2A400A64CF4 /* MovieDetailsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsState.swift; sourceTree = "<group>"; };
 		C4D9235F297AE4A8000F984E /* movie_info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = movie_info.json; sourceTree = "<group>"; };
+		C4D92361297AF122000F984E /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				C43AF7A1297A9BD000A64CF4 /* ActivityIndicator.swift */,
+				C4D92361297AF122000F984E /* SafariView.swift */,
 			);
 			path = UIKitViews;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				C43AF79D297A988E00A64CF4 /* MovieListState.swift in Sources */,
 				C43AF79B297A971900A64CF4 /* MoviePosterCarouselView.swift in Sources */,
 				C433BADE2979503100B3793A /* ImageLoader.swift in Sources */,
+				C4D92362297AF122000F984E /* SafariView.swift in Sources */,
 				C433BAB62979242900B3793A /* Movie_FinderApp.swift in Sources */,
 				C43AF7A8297AB2A400A64CF4 /* MovieDetailsState.swift in Sources */,
 				C433BAE4297962DC00B3793A /* MovieBackdropCarouselView.swift in Sources */,
