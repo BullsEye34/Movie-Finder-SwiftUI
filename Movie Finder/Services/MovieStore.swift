@@ -41,7 +41,7 @@ class MovieStore: MovieService{
             completion(.failure(.invalidEndPointError))
             return
         }
-        self.loadURLAndDecode(url: url, params: ["append_to_response" : "videos, credits"], completion: completion)
+        self.loadURLAndDecode(url: url, params: ["append_to_response" : "videos,credits"], completion: completion)
     }
     
     func searchMovies(query: String, completion: @escaping (Result<MovieResponse, MovieError>) -> ()) {

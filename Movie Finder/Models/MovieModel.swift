@@ -27,6 +27,8 @@ struct Movie: Decodable, Identifiable {
     
     let genres: [MovieGenre]?
     
+    let credits: MovieCredit?
+    
     static private let yearFormatter: DateFormatter = {
         let formatter = DateFormatter ()
         formatter.dateFormat = "yyyy"
@@ -74,10 +76,42 @@ struct Movie: Decodable, Identifiable {
         }
         return Movie.durationFormatter.string(from: TimeInterval(runtime) * 60) ?? "n/a"
     }
+    
+    var cast: [MovieCast]? {
+        credits?.cast
+    }
+    var crew: [MovieCrew]? {
+        credits?.crew
+    }
+    var directors: [MovieCrew]? {
+        crew?.filter { $0.job.lowercased () == "director"}
+    }
+    var producers: [MovieCrew]? {
+        crew?.filter { $0.job.lowercased () == "producer"}
+    }
+    var screenWriters: [MovieCrew]? {
+        crew?.filter { $0.job.lowercased () == "story"}
+    }
 }
-
 
 struct MovieGenre: Decodable{
     let name: String
     let id: Int
+}
+
+struct MovieCredit: Decodable{
+    let cast: [MovieCast]
+    let crew: [MovieCrew]
+}
+
+struct MovieCast: Decodable, Identifiable{
+    let id: Int
+    let character: String?
+    let name: String
+}
+
+struct MovieCrew: Decodable, Identifiable{
+    let id: Int
+    let job: String
+    let name: String
 }

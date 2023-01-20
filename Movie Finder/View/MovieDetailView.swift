@@ -32,7 +32,7 @@ struct MovieDetailView: View {
 struct MovieDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-                MovieDetailView(id: Movie.stubbedMovie.id)
+            MovieDetailView(id: Movie.stubbedMovie.id)
         }
     }
 }
@@ -70,6 +70,56 @@ struct MovieDetailsListView: View{
             
             Divider()
                 .listRowSeparator(.hidden)
+            
+            HStack(alignment: .top, spacing: 4){
+                if movie.cast != nil && movie.cast!.count > 0 {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text ("Starring").font(.headline)
+                        ForEach(self.movie.cast!.prefix(9)) { cast in
+                            Text (cast.name)
+                        }
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                    Spacer ()
+                }
+                if movie.crew != nil && movie.crew!.count > 0 {
+                    VStack(alignment: .leading, spacing: 4) {
+                        if movie.directors != nil &&
+                            movie.directors!.count > 0 {
+                            Text ("Director(s)").font(.headline)
+                            ForEach(self.movie.directors!.prefix(2)) { crew in
+                                Text (crew.name)
+                            }
+                        }
+                        
+                        if movie.producers != nil &&
+                            movie.producers!.count > 0 {
+                            Text ("Producers(s)").font(.headline)
+                                .padding(.top)
+                            ForEach(self.movie.producers!.prefix(2)) { crew in
+                                Text (crew.name)
+                            }
+                        }
+                        
+                        if movie.screenWriters != nil &&
+                            movie.screenWriters!.count > 0 {
+                            Text ("ScreenWriter(s)").font(.headline)
+                                .padding(.top)
+                            ForEach(self.movie.screenWriters!.prefix(2)) { crew in
+                                Text (crew.name)
+                            }
+                        }
+                        
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                    Spacer ()
+                }
+            }
+            .listRowSeparator(.hidden)
+            
+            Divider()
+                .listRowSeparator(.hidden)
+            
         }
         
     }

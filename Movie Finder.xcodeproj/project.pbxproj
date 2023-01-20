@@ -29,6 +29,7 @@
 		C43AF7A4297A9CC000A64CF4 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43AF7A3297A9CC000A64CF4 /* LoadingView.swift */; };
 		C43AF7A6297AB20D00A64CF4 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43AF7A5297AB20D00A64CF4 /* MovieDetailView.swift */; };
 		C43AF7A8297AB2A400A64CF4 /* MovieDetailsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43AF7A7297AB2A400A64CF4 /* MovieDetailsState.swift */; };
+		C4D92360297AE4A8000F984E /* movie_info.json in Resources */ = {isa = PBXBuildFile; fileRef = C4D9235F297AE4A8000F984E /* movie_info.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		C43AF7A3297A9CC000A64CF4 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		C43AF7A5297AB20D00A64CF4 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		C43AF7A7297AB2A400A64CF4 /* MovieDetailsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsState.swift; sourceTree = "<group>"; };
+		C4D9235F297AE4A8000F984E /* movie_info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = movie_info.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			children = (
 				C433BAE029795FB000B3793A /* search.json */,
 				C433BADF29795FB000B3793A /* trending.json */,
+				C4D9235F297AE4A8000F984E /* movie_info.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C433BAE129795FB000B3793A /* trending.json in Resources */,
+				C4D92360297AE4A8000F984E /* movie_info.json in Resources */,
 				C433BAE229795FB000B3793A /* search.json in Resources */,
 				C433BABD2979242900B3793A /* Preview Assets.xcassets in Resources */,
 				C433BABA2979242900B3793A /* Assets.xcassets in Resources */,
