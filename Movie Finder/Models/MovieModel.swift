@@ -15,15 +15,19 @@ struct MovieResponse: Decodable {
 // MARK: - Result
 struct Movie: Decodable, Identifiable {
     let id: Int
-    let backdropPath: String
+    let backdropPath: String?
     let title: String
-    let originalTitle, overview, posterPath: String
-    let popularity: Double
-    let releaseDate: String
-    let voteAverage: Double
-    let voteCount: Int
+    let originalTitle, overview: String
+    let posterPath: String?
+    let popularity: Double?
+    let releaseDate: String?
+    let voteAverage: Double?
+    let voteCount: Int?
     
     var backdropURL: URL {
-        return URL(string: "https://image.tmdb.org/t/p/w500\(backdropPath)")!
+        return URL(string: "https://image.tmdb.org/t/p/w500\(backdropPath ?? "")")!
+    }
+    var posterURL: URL {
+        return URL(string: "https://image.tmdb.org/t/p/w500\(posterPath ?? "")")!
     }
 }

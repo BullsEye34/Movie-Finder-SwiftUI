@@ -12,17 +12,27 @@ class MovieStore: MovieService{
     static let shared = MovieStore()
     private init(){}
     
-    private let apiKey = ""
+    private let apiKey = "43236c9b4ffaa78012ee092b4e4f74d8"
     private let baseURL = "https://api.themoviedb.org/3"
     private let urlSession = URLSession.shared
     private let jsonDecoder = Utils.jsonDecoder
     
     func fetchMovies(from endpoint: MovieListEndpoints, completion: @escaping (Result<MovieResponse, MovieError>) -> ()) {
-        guard let url = URL(string: "\(baseURL)/trending/movie/week/\(endpoint.rawValue)")else{
-            completion(.failure(.invalidEndPointError))
-            return
+        let urll: URL
+        if(endpoint==MovieListEndpoints.trending){
+            guard let url = URL(string: "\(baseURL)/\(endpoint.rawValue)/movie/week")else{
+                completion(.failure(.invalidEndPointError))
+                return
+            }
+            urll = url
+        }else{
+            guard let url = URL(string: "\(baseURL)/movie/\(endpoint.rawValue)")else{
+                completion(.failure(.invalidEndPointError))
+                return
+            }
+            urll = url
         }
-        self.loadURLAndDecode(url: url, completion: completion)
+        self.loadURLAndDecode(url: urll, completion: completion)
         
     }
     
