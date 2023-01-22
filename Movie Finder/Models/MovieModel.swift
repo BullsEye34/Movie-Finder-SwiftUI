@@ -97,6 +97,7 @@ struct Movie: Decodable, Identifiable {
     
     var youtubeTrailers: [MovieVideo]? {
         videos?.results.filter({ $0.youtubeURL != nil})
+            .filter({$0.name.lowercased().contains("trailer")})
     }
 }
 
