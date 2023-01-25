@@ -42,3 +42,28 @@ let movieApiKey = "<YOUR_API_KEY>";
 This project is a recreation from the YouTube Video: https://youtu.be/cTNhMgNV53s . It was fast, but really helpful. Thanks a lot Alfian.
 
 # This project is complete. There will be no more commits to this project.
+
+# Screenshots:
+<img src="./ScreenShots/Home.png" width=300 />
+
+> Home Screen
+
+<img src="./ScreenShots/MovieDetails_2.png" width=300 />
+
+> Movie Details Screen
+
+<img src="./ScreenShots/Search.png" width=300 />
+
+> Search Screen
+
+<img src="./ScreenShots/SearchMovieDetails_1.png" width=300/>
+
+> Search Movie Details Screen - Part 1
+
+<img src="./ScreenShots/SearchMovieDetails_2.png" width=300 />
+
+> Search Movie Details Screen - Part 2
+
+<img src="./ScreenShots/WebView.png" width=300 />
+
+> Movie Trailer WebView
